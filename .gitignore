@@ -40,4 +40,4 @@ Thumbs.db
 .env
 .env.local
 # Data folder
-Data/
+data/
