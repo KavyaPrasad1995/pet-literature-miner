@@ -1,0 +1,28 @@
+# requirements.txt
+# Python dependencies for the PET Literature Miner project.
+# Install all dependencies with:
+#   pip install -r requirements.txt
+
+# --- Core / Standard Library (no install needed, listed for reference) ---
+# os, json, re, string, sqlite3 — built into Python, no install required
+
+# --- Data handling ---
+pandas>=2.0.0          # For loading and analyzing tabular data (e.g., CSVs of paper metadata)
+
+# --- Text processing ---
+nltk>=3.8.0            # Natural Language Toolkit — tokenization, stopwords, stemming
+spacy>=3.7.0           # Advanced NLP — named entity recognition, dependency parsing
+
+# --- HTTP / web scraping (for fetching papers from APIs like PubMed) ---
+requests>=2.31.0       # Simple HTTP requests to web APIs
+beautifulsoup4>=4.12.0 # Parsing HTML/XML responses (e.g., from PubMed E-utilities)
+lxml>=5.0.0            # Fast XML/HTML parser (used by BeautifulSoup)
+
+# --- PDF handling ---
+pymupdf>=1.23.0        # PyMuPDF — extract text from PDFs
+
+# --- Jupyter notebooks ---
+jupyter>=1.0.0         # For exploratory analysis in the notebooks/ folder
+
+# --- Testing ---
+pytest>=8.0.0          # Test runner for the tests/ folder
