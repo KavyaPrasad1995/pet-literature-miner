@@ -52,9 +52,9 @@ pip install -r requirements.txt
 
 ### 4. Add paper data
 
-Place your paper files (in JSON format) inside the `data/` folder.
+Place your paper files inside the `data/` folder. The tool supports both **JSON and PDF formats**.
 
-Each JSON file should follow this structure:
+For JSON files, use this structure:
 
 ```json
 {
@@ -73,7 +73,7 @@ python src/main.py
 ```
 
 This will:
-1. Load all JSON files from `data/`
+1. Load all JSON and PDF files from `data/`
 2. Clean the text in each paper
 3. Tag papers with PET tracer and oncology keywords
 4. Save results to `data/papers.db` (SQLite)
@@ -85,7 +85,7 @@ This will:
 
 | File | Purpose |
 |------|---------|
-| `parser.py` | Reads JSON paper files and returns structured dicts |
+| `parser.py` | Reads JSON and PDF paper files and returns structured dicts |
 | `cleaner.py` | Removes noise from text (whitespace, special chars) |
 | `tagger.py` | Matches keywords for PET tracers and oncology topics |
 | `database.py` | Creates the SQLite DB, inserts and queries papers |
