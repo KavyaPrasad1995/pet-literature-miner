@@ -1,5 +1,5 @@
 # Data folder
-Data/
+data/
 
 # Python
 __pycache__/
@@ -39,5 +39,4 @@ Thumbs.db
 # Environment
 .env
 .env.local
-# Data folder
-data/
+
